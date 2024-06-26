@@ -1,3 +1,6 @@
+# TODO
+# execute at ~1000 ~ ~1000 run function logic:start_current_location
+
 # set new world spawn and kill all players
 execute as @s run setworldspawn ~1000 ~ ~1000
 execute as @a run spawnpoint @s ~1000 ~ ~1000
