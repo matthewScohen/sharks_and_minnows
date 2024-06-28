@@ -35,3 +35,4 @@ schedule function logic:give_starting_stuff 10t append
 
 # start game loop
 schedule function logic:loop 10t append
+schedule function logic:shrinkworldborder 1200s append
