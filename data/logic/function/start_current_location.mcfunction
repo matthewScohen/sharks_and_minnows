@@ -1,13 +1,16 @@
 clear @a
 # set new world spawn and kill all players
-execute as @s run setworldspawn ~ ~ ~
+# execute as @s run setworldspawn 0 0 0
 execute as @a run spawnpoint @s ~ ~ ~
 
 # clear old and summon new invisible armor stand for relative coordinate reference
 kill @e[name=reference]
 execute as @s run summon armor_stand ~ ~ ~ {Invisible:true, Invulnerable:true, CustomName:reference}
 # set up compass chest at new spawn
-execute as @e[name=reference] run setblock ~ 0 ~ minecraft:chest
+# execute as @e[name=reference] run setblock ~ 0 ~ minecraft:chest
+
+setblock 0 0 0 minecraft:chest
+
 # assign each minnow a random id score
 scoreboard players set @a id 0
 scoreboard players set @r[team=Minnow, scores={id=0}] id 1
